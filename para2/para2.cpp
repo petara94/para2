@@ -36,6 +36,7 @@ int main()
 	int N = 0;
 	Student* Students = new Student[N];
 	char flag = 'y';
+
 	while (flag == 'y' || flag == 'н')
 	{
 
@@ -48,8 +49,7 @@ int main()
 		cout << "Дата Рождения (дд мм гггг): "; cin >> Date.day >> Date.mounth >> Date.year;
 		cout << "Оценка: "; cin >> mark;
 		Student FictStudent = {
-			Fname,
-			Lname,
+			Fname, Lname,
 			age,
 			Date,
 			mark
@@ -58,8 +58,10 @@ int main()
 
 		cout << "Продолжить?(y/n)  "; cin >> flag;
 		delete &Date;
-		delete &Fname, &Lname;
-		delete &age, &mark;
+		delete &Fname;
+		delete &Lname;
+		delete &age;
+		delete &mark;
 
 	}
 
