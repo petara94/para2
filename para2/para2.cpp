@@ -4,13 +4,6 @@
 #include <windows.h>
 using namespace std;
 
-/*
-struct Tabel {
-	int count;
-	int *predmests = new int[count];
-};
-*/
-
 struct BornDate {
 	char day[2];
 	char mounth[2];
@@ -43,7 +36,6 @@ int main()
 	int N = 0;
 	Student* Students = new Student[N];
 	char flag = 'y';
-
 	while (flag == 'y' || flag == 'н')
 	{
 
